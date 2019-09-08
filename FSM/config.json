@@ -1,0 +1,49 @@
+{
+  "training": {
+    "optimizer": "adam",
+    "clip_c": 1,
+    "lrate": 0.001,
+    "epochs": 60
+  },
+  "management": {
+    "monitor_loss": 1000,
+    "checkpoint_freq": 10,
+    "print_samples": false,
+    "evaluate": false
+  },
+  "data": {
+    "src": "/home/twister/ASTER/E2S-Ensemble/full_data/all-sci-fi-data-train_input.txt",
+    "trg": "/home/twister/ASTER/E2S-Ensemble/full_data/all-sci-fi-data-train_output.txt",
+    "test_src": "/home/twister/ASTER/E2S-Ensemble/full_data/all-sci-fi-data-val_input.txt",
+    "test_trg": "/home/twister/ASTER/E2S-Ensemble/full_data/all-sci-fi-data-val_output.txt",
+    "batch_size": 8,
+    "n_words_trg": 30000,
+    "valid_batch_size": 80,
+    "n_words_src": 30000,
+    "max_src_length": 30,
+    "max_trg_length": 30,
+    "task": "translation",
+    "save_dir": "",
+    "load_dir": false,
+    "preload_weights": "/media/twister/04dc1255-e775-4227-9673-cea8d37872c7/ASTER/Event2Sentence/eval/ensemble/new_model/model_translation__src_E2S-Full__trg_E2S-Full__attention_attention__dim_1024__emb_dim_1024__optimizer_adam__n_layers_src_3__n_layers_trg_1__bidir_False__epoch_30.model"
+  },
+  "model": {
+    "dim": 1024,
+    "dim_trg": 1024,
+    "use_dropout": false,
+    "dim_word_src": 1024,
+    "n_words_src": 30000,
+    "n_words": 30000,
+    "dim_word_trg": 1024,
+    "n_layers_src": 3,
+    "n_layers_trg": 1,
+    "bidirectional": false,
+    "src_type": "E2S-Full",
+    "trg_type": "E2S-Full",
+    "decode": "beam_search",
+    "beam_size": 3,
+    "seq2seq": "attention",
+    "optimizer": "adam",
+    "dropout": 0.3
+  }
+}

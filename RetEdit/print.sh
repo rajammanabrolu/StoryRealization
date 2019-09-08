@@ -1,0 +1,1 @@
+export COPY_EDIT_DATA=$(pwd); python scifi_valid_print.py

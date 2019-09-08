@@ -1,0 +1,1 @@
+sudo docker kill $(sudo docker ps -q);sudo docker rm;$(sudo docker ps -a -q);sudo ENTAIL_GEN_DATA=/home/eilab/ASTER/test-git/datasets/ python run_docker.py -g 1 "/bin/bash server.sh"

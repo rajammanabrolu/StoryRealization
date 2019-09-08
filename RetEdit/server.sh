@@ -1,0 +1,1 @@
+export COPY_EDIT_DATA=$(pwd);export PYTHONIOENCODING=utf8;python run_server.py

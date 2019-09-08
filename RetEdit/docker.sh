@@ -1,0 +1,1 @@
+sudo ENTAIL_GEN_DATA=/home/eilab/ASTER/test-git/datasets/ python run_docker.py -g 1
