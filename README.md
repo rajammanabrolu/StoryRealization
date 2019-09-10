@@ -1,6 +1,6 @@
 # Event-to-Sentence Ensemble
 
-Code for the paper "Story Realization: Expanding Plot Events into Sentences" Prithviraj Ammanabrolu, Ethan Tien, Wesley Cheung, Zhaochen Luo, William Ma, Lara J. Martin, and Mark O. Riedl https://arxiv.org/abs/
+Code for the paper "Story Realization: Expanding Plot Events into Sentences" Prithviraj Ammanabrolu, Ethan Tien, Wesley Cheung, Zhaochen Luo, William Ma, Lara J. Martin, and Mark O. Riedl https://arxiv.org/abs/1909.03480
 
 
 BibTex:
@@ -12,8 +12,8 @@ BibTex:
               Riedl, Mark O.",
             archivePrefix = {arXiv},
             journal={CoRR},
-            volume={},
-            arxivId = {}
+            volume={abs/1909.03480},
+            arxivId = {1909.03480}
     }
 
 Disclaimer: Code is not upkept
