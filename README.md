@@ -6,13 +6,12 @@ Code for the paper "Story Realization: Expanding Plot Events into Sentences" Pri
 BibTex:
 
     {
-          @article{ammanabrolu-storyrealize,
+          @inproceedings{ammanabrolu-storyrealize,
             title = "Story Realization: Expanding Plot Events into Sentences",
             author = "Ammanabrolu, Prithviraj and Tien, Ethan and Cheung, Wesley and Luo, Zhaochen and Ma, William and Martin, Lara J. and
               Riedl, Mark O.",
-            archivePrefix = {arXiv},
-            journal={CoRR},
-            volume={abs/1909.03480},
+            booktitle={{Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)}},
+            year = "2019",
             arxivId = {1909.03480}
     }
 
@@ -32,6 +31,18 @@ Data columns are split by '|||' and the columns on each line are:
 Each story ends with an `<EOS>` tag and is followed by a dictionary that contains all the named entities that were generalized by category for that particular story.
 
 For convenience, the data is preprocessed into bitext for the purpose of training our models is also included as all-sci-fi-data-{train, val, test}_{input, output}.txt, with input/output representing the bitext aligned by line number.
+
+**Event Creation (optional):**
+If you wish to "eventify" your own sentences, you will run the code found in the EventCreation folder. This code was made using Python 3.6.
+Before running anything, you will want to get your favorite version of Stanford's parser and put it under EventCreation/tools/stanford. We used `stanford-corenlp-full-2016-10-31.zip`, `stanford-english-corenlp-2016-10-31-models.jar`, and `stanford-ner-2016-10-31.zip`, which were then unzipped into their respective directories. 
+
+The file `run_event.py` shows you how to run the code if you want a sentence eventified at a time.
+
+The process can also be done in two steps:
+1. Start the ```./runNLPserver.sh``` server and run ```python corenlp.py``` to get a JSON of the parses/NER of the sentences.
+You will need to change the name of the files in `corenlp.py`, and once `corenlp.py` is finished running, remove the last comma in the JSON so that it can be read as a real JSON file.
+2. Run `eventmaker_preparsed.py`, passing in the parse file and the sentence file that you get from the first step (in addition to what you want to name the output file). Example: ```python eventmaker_preparsed.py parsed.json sentences.txt events.txt```
+
 
 **Start RetEdit server:**
 ```bash
