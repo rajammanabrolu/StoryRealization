@@ -13,9 +13,9 @@ BibTex:
             booktitle={{Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)}},
             year = "2019",
             arxivId = {1909.03480}
-    }
+    
 
-Disclaimer: Code is not upkept
+Disclaimer: Code is not upkept/shaggy/messy
 
 ## TL;DR
 
