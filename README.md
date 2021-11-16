@@ -20,17 +20,7 @@ Disclaimer: Code is not upkept
 ## TL;DR
 
 **Dataset:**
-The full generalized sci-fi dataset can be found [here](https://drive.google.com/open?id=1A5RYjrj9FZsrBtyTr45-fnYWKZX1e7KA), as all-sci-fi-data.txt.
-
-Data columns are split by '|||' and the columns on each line are:
-- List of original word events
-- List of generalized events
-- Original split and pruned sentence
-- Generalized split and pruned sentence
-
-Each story ends with an `<EOS>` tag and is followed by a dictionary that contains all the named entities that were generalized by category for that particular story.
-
-For convenience, the data is preprocessed into bitext for the purpose of training our models is also included as all-sci-fi-data-{train, val, test}_{input, output}.txt, with input/output representing the bitext aligned by line number.
+The dataset is now available on Hugging Face: https://huggingface.co/datasets/lara-martin/Scifi_TV_Shows
 
 **Event Creation (optional):**
 If you wish to "eventify" your own sentences, you will run the code found in the EventCreation folder. This code was made using Python 3.6.
