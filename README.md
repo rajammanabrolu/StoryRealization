@@ -1,21 +1,27 @@
 # Event-to-Sentence Ensemble
 
-Code for the paper "Story Realization: Expanding Plot Events into Sentences" Prithviraj Ammanabrolu, Ethan Tien, Wesley Cheung, Zhaochen Luo, William Ma, Lara J. Martin, and Mark O. Riedl https://arxiv.org/abs/1909.03480
+Code for the paper "Story Realization: Expanding Plot Events into Sentences" Prithviraj Ammanabrolu, Ethan Tien, Wesley Cheung, Zhaochen Luo, William Ma, Lara J. Martin, and Mark O. Riedl https://ojs.aaai.org//index.php/AAAI/article/view/6232 
+
+On arXiv: https://arxiv.org/abs/1909.03480
+
+**Disclaimer:** Code is not upkept
+
+BibTex Citation:
+```
+@inproceedings{ammanabrolu-storyrealize,
+    title = "Story Realization: Expanding Plot Events into Sentences",
+    author = "Ammanabrolu, Prithviraj and Tien, Ethan and Cheung, Wesley and Luo, Zhaochen and Ma, William and Martin, Lara J. and
+      Riedl, Mark O.",
+    booktitle={{Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)}},
+    year = "2020",
+    arxivId = {1909.03480},
+    url = {https://ojs.aaai.org//index.php/AAAI/article/view/6232},
+    volume={34},
+    number={05}
+}            
+```
 
 
-BibTex:
-
-    {
-          @inproceedings{ammanabrolu-storyrealize,
-            title = "Story Realization: Expanding Plot Events into Sentences",
-            author = "Ammanabrolu, Prithviraj and Tien, Ethan and Cheung, Wesley and Luo, Zhaochen and Ma, William and Martin, Lara J. and
-              Riedl, Mark O.",
-            booktitle={{Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI-20)}},
-            year = "2019",
-            arxivId = {1909.03480}
-    }
-
-Disclaimer: Code is not upkept
 
 ## TL;DR
 
